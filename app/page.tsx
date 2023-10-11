@@ -5,8 +5,10 @@ export default async function Home() {
     const res = await request.json();
 
     return (
-        <main className={styles.main}>
-            <h1>{res.message}</h1>
-        </main>
+        <>
+            <main className={styles.main}>
+                <h1>{res.message}</h1>
+            </main>
+        </>
     );
 }
