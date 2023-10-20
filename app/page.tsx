@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import AsideNew from "@/components/AsideNew";
 
 export default async function Home() {
     const request = await fetch("http://localhost:3000/api/blog");
@@ -6,8 +6,9 @@ export default async function Home() {
 
     return (
         <>
-            <main className={styles.main}>
+            <main>
                 <h1>{res.message}</h1>
+                <AsideNew />
             </main>
         </>
     );
